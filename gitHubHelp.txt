@@ -1,0 +1,35 @@
+mkdir <folderName>
+
+cd <folderName>
+                    	/*Initialize Local Git repository*/
+git init
+
+			/*Download the Global content to Local repository*/
+
+git pull https://github.com/ezudheen/s4OOD.git
+
+			/*Compare folder content v/s Local repository*/
+git status
+
+                    	/*Attach <modifiedFileName> to Local repository*/
+
+git add <modifiedFileName> 
+
+                    	/*Ready the content of Local repository for export to Global repository*/
+
+git commit -m "<Comment>"
+
+                    	/*Discard the modifications in Local repository*/
+
+git reset
+                    	/*Set the path of Global repository*/
+
+git remote add origin https://github.com/ezudheen/s4OOD.git
+
+                    	/*Publicise the changes to Global repository*/
+
+git push origin master
+
+			/*The terminal will prompt for a user id and password after entering the above command*/
+
+			/*You have to create a user account in GitHub (www.github.com) and to provide the details here*/
